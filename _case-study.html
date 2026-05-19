@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+ @page{size:Letter;margin:0}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+ html,body{font-family:'Inter',system-ui,sans-serif;color:#0a0a0a;background:#fff;-webkit-font-smoothing:antialiased;font-size:10.5pt;line-height:1.5;letter-spacing:-.005em}
+ body{width:8.5in;min-height:11in;padding:.55in .6in}
+ .hero{display:flex;align-items:center;gap:14px;padding-bottom:16px;border-bottom:2px solid #0a0a0a;margin-bottom:20px}
+ .logo{width:42px;height:42px;border-radius:11px;background:linear-gradient(135deg,#3949ab,#1a237e);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:13px;flex-shrink:0}
+ .ht{flex:1}.ht h1{font-size:21pt;font-weight:800;letter-spacing:-.03em;line-height:1.05}
+ .ht .s{font-size:10.5pt;color:#525252;font-weight:500;margin-top:3px}
+ .hm{text-align:right;font-size:8.5pt;color:#1a237e;font-weight:700}
+ h2{font-size:13pt;font-weight:700;letter-spacing:-.02em;margin:16px 0 7px}h2:first-of-type{margin-top:6px}
+ p{margin-bottom:8px;color:#404040}p strong{color:#0a0a0a;font-weight:600}
+ ul{list-style:none}ul li{position:relative;padding-left:14px;margin-bottom:5px;color:#404040}
+ ul li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:#3949ab}
+ ul li strong{color:#0a0a0a;font-weight:600}
+ .arch{background:#fafafa;border:1px solid #e7e5e4;border-radius:8px;padding:14px 16px;font-family:'JetBrains Mono',monospace;font-size:8.5pt;line-height:1.55;color:#404040;white-space:pre;margin:6px 0 12px}
+ .arch .v{color:#1a237e;font-weight:600}
+ .pills{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+ .pill{padding:3px 8px;border-radius:6px;background:#e8eaf6;border:1px solid #c5cae9;color:#1a237e;font-family:'JetBrains Mono',monospace;font-size:8.5pt;font-weight:500}
+ .callout{background:#e8eaf6;border-left:3px solid #3949ab;padding:8px 12px;border-radius:0 6px 6px 0;margin:8px 0 12px;font-size:9.5pt;color:#1a237e}
+ footer{margin-top:18px;padding-top:12px;border-top:1px solid #e7e5e4;display:flex;justify-content:space-between;font-size:9pt;color:#737373}
+ footer .n{color:#0a0a0a;font-weight:600}
+</style></head><body>
+ <div class="hero"><span class="logo">BA</span><div class="ht"><h1>Bot System Audit — Independent Review</h1><div class="s">Multi-department automation bots · evidence-based, scaling-safe</div></div><div class="hm">Framework + sample report</div></div>
+
+ <h2>The problem</h2>
+ <p>Teams that already run automation bots across departments want to scale further — but the seams between bots that are each individually "fine" are exactly where workflow gaps, silent failures, inflated metrics and lead leakage hide. An internal team stops seeing them; an external, evidence-based audit does not.</p>
+
+ <h2>The deliverable</h2>
+ <p>A structured audit in a fixed format so scope and output are unambiguous before any contract: <strong>8 dimensions scored 0–5</strong> (conversation design, workflow integrity, lead management, reporting accuracy, AI/LLM safety, reliability, scalability, security); a <strong>9-phase methodology</strong>; a <strong>findings register</strong> (evidence, impact, fix, effort, 4-tier severity); and a <strong>remediation roadmap</strong> sequenced quick-wins-first so workflows are hardened before more automation is added.</p>
+
+ <h2>Methodology</h2>
+ <div class="arch">discovery + access ─▶ <span class="v">system mapping</span> (every bot on one page)
+   └─▶ heuristic review ─▶ transcript/log review ─▶ <span class="v">adversarial probing</span>
+         └─▶ data reconciliation ─▶ findings + severity ─▶ <span class="v">prioritised roadmap</span> ─▶ readout</div>
+ <p>The audit is adversarial and evidence-based — the live system is driven through edge cases, handoffs, prompt-injection and failure paths to reproduce issues, not theorise them. The repo ships the full framework plus a polished, anonymised sample report so the exact deliverable format is visible up front.</p>
+
+ <div class="callout"><strong>Why it matters:</strong> an external reviewer who has shipped these systems in production probes yours independently — so you know exactly what to fix, and in what order, before scaling further automation.</div>
+
+ <h2>Covers</h2>
+ <div class="pills"><span class="pill">Conversation design</span><span class="pill">Workflow integrity</span><span class="pill">Lead / data accuracy</span><span class="pill">Reporting accuracy</span><span class="pill">AI / LLM safety</span><span class="pill">Reliability</span><span class="pill">Scalability</span><span class="pill">Security</span></div>
+
+ <footer><div><span class="n">Waseem Iftikhar</span> · AI / Automation Engineer</div><div>Portfolio case study</div></footer>
+</body></html>
